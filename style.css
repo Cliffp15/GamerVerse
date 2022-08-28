@@ -9,7 +9,7 @@ nav{
     justify-content: space-around;
     align-items:center;
     min-height: 7vh;
-    background-color: #5d4954;
+    background-color: #01051d;
     font-family: 'Lato', sans-serif;
 }
 
@@ -29,10 +29,24 @@ width: 50%;
 .nav-links li{
     list-style: none;
 }
+
+
 .nav-links a{
     color: white;
 text-decoration: none;
 letter-spacing: 2px;
 font-weight:400px;
 font-size: 15px;
+}
+
+.hamburger{
+    /*display: none;*/
+}
+
+.hamburger div{
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: white;
+
 }
