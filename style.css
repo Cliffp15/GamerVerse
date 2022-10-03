@@ -9,7 +9,7 @@ nav{
     justify-content: space-around;
     align-items:center;
     min-height: 7vh;
-    background-color: #01051d;
+    background-color: #101010;
     font-family: 'Lato', sans-serif;
 }
 
@@ -30,25 +30,19 @@ width: 50%;
     list-style: none;
 }
 
-
 .nav-links a{
     color: white;
 text-decoration: underline;
-text-decoration-color: red;
+text-decoration-color: #F20000;
 text-underline-offset: 10px;
 letter-spacing: 2px;
 font-weight:400px;
 font-size: 15px;
 }
 
-.hamburger{
-    /*display: none;*/
-}
-
 .hamburger div{
     width: 25px;
     height: 2px;
-    margin: 5px;
+    margin: 4px;
     background-color: white;
-
 }
