@@ -33,7 +33,9 @@ width: 50%;
 
 .nav-links a{
     color: white;
-text-decoration: none;
+text-decoration: underline;
+text-decoration-color: red;
+text-underline-offset: 10px;
 letter-spacing: 2px;
 font-weight:400px;
 font-size: 15px;
