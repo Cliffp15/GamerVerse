@@ -15,6 +15,19 @@
         background-image:linear-gradient(#270202 5%,#270202 10%,#21456D, #21456D, #21456D, #21456D, #270202 )
         }
 
+        #gamesdropdown{ 
+
+            vertical-align: middle;
+            color: white;
+            cursor: pointer;
+        }
+
+        #moredropdown{ 
+            vertical-align: middle;
+            color: white;
+            cursor: pointer;
+        }
+
         #searchbtn{ 
             color: white;
             cursor: pointer;
@@ -30,7 +43,8 @@
 
         .BannerImage {
             width: 1100px;
-            margin-left: 770px;
+            height: 500px;
+            margin-left: 790px;
             cursor: pointer;
             display:block
         }
@@ -41,11 +55,10 @@
         .BannerTitle { 
             color:white;
             width: 300px;
-            margin-left: 670px;
-            font-size: 55px;
+            margin-left: 760px;
+            font-size: 50px;
             cursor: pointer;
-            display: inline;
-            
+            display: inline;  
         }
         
         .BannerTitle:hover{ 
@@ -55,9 +68,9 @@
         .SiteTitle {
             color:white;
             width: 300px;
-            margin-left: 990px;
+            margin-left: 1050px;
             margin-bottom: 120px;
-            font-size: 55px;
+            font-size: 50px;
             cursor: pointer;
             display: inline;
         }
@@ -93,12 +106,14 @@
             <h4>Gamerverse</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="http://127.0.0.1:5500/index.html/Games">Games</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html/Games">Games<span class="material-symbols-outlined" id="gamesdropdown">
+                arrow_drop_down</span></a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Previews</a></li>
             <li><a href="#">Videos</a></li>
-            <li><a href="#">More</a></li>
+            <li><a href="#">More<span class="material-symbols-outlined" id="moredropdown">
+                arrow_drop_down</span></a></li>
         </ul>
         <span class="material-symbols-outlined" id ="searchbtn">
             search
