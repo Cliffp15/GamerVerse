@@ -9,25 +9,29 @@ nav{
     justify-content: space-around;
     align-items:center;
     min-height: 7vh;
-    background-color: #101010;
-    font-family: 'Lato', sans-serif;
+    background-color: #101019;
 }
 
 .logo{
 color: white;
 text-transform:capitalize;
 letter-spacing: 1px;
-font-size: 22px;
+font-size: 42px;
 }
 
 .nav-links{
 display: flex;
+margin-left: 350px;
+padding-right: 40px;
 justify-content: space-around;
+align-items:center;
 width: 50%;
 }
 
 .nav-links li{
     list-style: none;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 .nav-links a{
@@ -37,7 +41,8 @@ text-decoration-color: #F20000;
 text-underline-offset: 10px;
 letter-spacing: 2px;
 font-weight:400px;
-font-size: 15px;
+font-size: 20px;
+vertical-align: middle;
 }
 
 .hamburger div{
