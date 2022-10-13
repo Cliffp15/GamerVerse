@@ -32,7 +32,6 @@
       }
 
       body {
-        /* overflow-y: scroll;   */
         overflow: visible;
         overflow-x: hidden;
         height: 100%;
@@ -41,7 +40,7 @@
           #270202 5%,
           #270202 5%,
           #21456d,
-          #21456d,
+          #1c3a5c,
           #21456d,
           #21456d,
           #270202
@@ -72,9 +71,9 @@
       }
 
       .BannerImage {
-        width: 1100px;
+        width: 1400px;
         height: 500px;
-        margin-left: 790px;
+        margin-left: 640px;
         cursor: pointer;
         display: block;
       }
@@ -91,26 +90,17 @@
         display: inline;
       }
 
-      .BannerTitle:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-      .SiteTitle {
+      .Author {
         color: white;
         width: 300px;
-        margin-left: 1050px;
+        margin-left: 820px;
         margin-bottom: 120px;
         font-size: 54px;
         cursor: pointer;
         display: inline;
       }
 
-      .SiteTitle :hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .NewsBanner {
+      .Border {
         color: white;
         width: 300px;
         background-color: #1b1737;
@@ -122,8 +112,7 @@
         font-size: 80px;
         cursor: pointer;
         padding-left: 920px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 3px;
         display: block;
       }
 
@@ -140,165 +129,36 @@
         height: 100vh;
       }
 
-      .NewsRow1 {
-        display: flex;
+      .TextSection1 {
+        color: white;
+        width: 1400px;
+        font-size: 30px;
         padding-top: 40px;
-        padding-left: 550px;
+        margin-left: 640px;
+      }
+
+      .Video {
+        width: 500px;
+        display: flex;
+        padding-top: 100px;
+        padding-left: 500px;
+        margin-left: 230px;
         vertical-align: bottom;
       }
 
-      .NewsRow1 img {
+      .Video video {
         display: flex;
-        width: 900px;
-        height: 300px;
+        width: 1400px;
+        height: 700px;
         padding-right: 200px;
         vertical-align: middle;
         align-items: center;
         cursor: pointer;
       }
-      .NewsRow1 img:hover {
-        opacity: 0.6;
-      }
 
-      .R1C1 {
+      .videowrapper {
         width: 900px;
-        padding-right: 150px;
-      }
-
-      .R1C1Title {
-        color: white;
-        align-items: center;
-        font-size: 35px;
-        margin-left: 70px;
-        cursor: pointer;
-      }
-
-      .R1C1Title:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R1C1SiteTitle {
-        color: white;
-        align-items: center;
-        font-size: 45px;
-        margin-left: 150px;
-        cursor: pointer;
-      }
-      .R1C1SiteTitle:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R1C2 {
-        width: 900px;
-        padding-right: 150px;
-      }
-
-      .R1C2Title {
-        color: white;
-        display: inline-block;
-        align-items: center;
-        font-size: 33px;
-        margin-left: 3px;
-        cursor: pointer;
-      }
-      .R1C2Title:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R1C2SiteTitle {
-        color: white;
-        align-items: center;
-        font-size: 45px;
-        margin-left: 140px;
-        cursor: pointer;
-      }
-      .R1C2SiteTitle:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .NewsRow2 {
-        display: flex;
-        padding-top: 40px;
-        padding-left: 550px;
-        vertical-align: bottom;
-      }
-
-      .NewsRow2 img {
-        display: flex;
-        width: 900px;
-        height: 300px;
-        padding-right: 200px;
-        vertical-align: middle;
-        align-items: center;
-        cursor: pointer;
-      }
-      .NewsRow2 img:hover {
-        opacity: 0.6;
-      }
-
-      .R2C1 {
-        width: 900px;
-        padding-right: 150px;
-      }
-
-      .R2C1Title {
-        padding-top: 20px;
-        color: white;
-        align-items: center;
-        font-size: 40px;
-        margin-left: 4px;
-        cursor: pointer;
-      }
-      .R2C1Title:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R2C1SiteTitle {
-        color: white;
-        align-items: center;
-        font-size: 45px;
-        margin-left: 150px;
-        cursor: pointer;
-      }
-      .R2C1SiteTitle:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R2C2 {
-        width: 900px;
-        padding-right: 150px;
-      }
-
-      .R2C2Title {
-        padding-top: 20px;
-        color: white;
-        display: inline-block;
-        align-items: center;
-        font-size: 50px;
-        margin-left: 70px;
-        cursor: pointer;
-      }
-      .R2C2Title:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-
-      .R2C2SiteTitle {
-        color: white;
-        align-items: center;
-        font-size: 45px;
-        margin-left: 150px;
-        cursor: pointer;
-      }
-      .R2C2SiteTitle:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+        padding-right: 600px;
       }
     </style>
   </head>
@@ -338,52 +198,39 @@
     </nav>
 
     <div class="Hero Section">
-      <img class="BannerImage" src="Images/Street Fighter 6 Banner.jpg" />
-
+      <img class="BannerImage" src="Images/street_fighter_6_2.png" />
       <div class="BannerText">
         <p class="BannerTitle">
           Street Fighter 6 Announced After Mysterious Countdown
         </p>
-        <p class="SiteTitle">
-          <span><strong>Gameinformer - Feb 20, 2022</strong></span>
+        <p class="Author">
+          <span
+            ><strong>By Marcus Stewart On Feb 20, 2022 At 11:43</strong></span
+          >
         </p>
       </div>
     </div>
-
-    <div class="NewsSection">
-      <p class="NewsBanner">News</p>
-    </div>
+    <div class="Border"></div>
     <div class="NewsFeed">
-      <div class="NewsRow1">
-        <div class="R1C1">
-          <img class="R1C1Image" src="Images/LiesofP.png" />
-          <div class="R1C1Title">
-            Lies of P - 11 More Minutes of Gameplay | Gamescom 2022
-          </div>
-          <div class="R1C1SiteTitle">IGN - Aug 27, 2022</div>
-        </div>
-        <div class="R1C2">
-          <img class="R1C2Image" src="Images/xurdestiny2.png" />
-          <div class="R1C2Title">
-            Where is Xur Today? (August 26 - 30) Destiny 2 Xur Location And
-            Exotic Items Guide
-          </div>
-          <div class="R1C2SiteTitle">Gamespot - Aug 26, 2022</div>
-        </div>
+      <div class="TextSection1">
+        Capcom’s weeklong countdown clock has expired and on the other side is
+        the announcement of Street Fighter 6. The reveal fittingly came at the
+        conclusion of the Capcom Pro Tour. The cinematic teaser showed a
+        face-off between Ryu and Luke, the final DLC fighter to join Street
+        Fighter V who Capcom previously said would play an important role in the
+        franchise's future. The art style resembles a more traditional 3D look
+        compared to the ink brush style that defined Street Fighters 4 and 5,
+        though this could only be for the trailer and not indicative of the
+        in-game graphics. Unfortunately, nothing else was revealed other than
+        the promise of more information coming this summer.
       </div>
-      <div class="NewsRow2">
-        <div class="R2C1">
-          <img class="R2C1Image" src="Images/TheLstOfUs.png" />
-          <div class="R2C1Title">
-            The Last Of Us Part 1 Will Use Dualsense In a Completely New Way -
-            IGN Daily Fix
-          </div>
-          <div class="R2C1SiteTitle">IGN - Aug 26, 2022</div>
-        </div>
-        <div class="R2C2">
-          <img class="R2C2Image" src="Images/Portalcompanion.png" />
-          <div class="R2C2Title">Portal Companion Collection</div>
-          <div class="R2C2SiteTitle">Metacritic - Jun 28, 2022</div>
+      <div class="Video">
+        <div class="Videowrapper">
+          <video
+            src="Videos/Street Fighter 6_Trim.mp4"
+            autoplay
+            controls
+          ></video>
         </div>
       </div>
     </div>
