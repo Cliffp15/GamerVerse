@@ -4,3 +4,51 @@
     box-sizing: border-box;
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 7vh;
+    background-color: #101019;
+}
+
+.logo{
+color: white;
+text-transform:capitalize;
+letter-spacing: 1px;
+font-size: 42px;
+text-decoration: none;
+}
+
+.nav-links{
+display: flex;
+margin-left: 350px;
+padding-right: 40px;
+justify-content: space-around;
+align-items:center;
+width: 50%;
+}
+
+.nav-links li{
+    list-style: none;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.nav-links a{
+    color: white;
+text-decoration: underline;
+text-decoration-color: #F20000;
+text-underline-offset: 10px;
+letter-spacing: 2px;
+font-weight:400px;
+font-size: 20px;
+vertical-align: middle;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 2px;
+    margin: 4px;
+    background-color: white;
+}

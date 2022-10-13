@@ -34,12 +34,12 @@
       body {
         /* overflow-y: scroll;   */
         overflow: visible;
-        overflow-x: scroll;
-        height: 100vh;
+        overflow-x: hidden;
+        height: 100%;
         width: 100%;
-        background-image: linear-gradient(
+        background-image: repeating-linear-gradient(
           #270202 5%,
-          #270202 10%,
+          #270202 5%,
           #21456d,
           #21456d,
           #21456d,
@@ -134,6 +134,67 @@
         font-size: 42px;
         text-decoration: none;
       }
+
+      .NewsFeed {
+        padding-top: 5px;
+        height: 100vh;
+      }
+
+      .NewsRow1 {
+        display: flex;
+        padding-top: 40px;
+        padding-left: 550px;
+        vertical-align: bottom;
+      }
+
+      .NewsRow1 img {
+        display: flex;
+        width: 900px;
+        height: 300px;
+        padding-right: 200px;
+        vertical-align: middle;
+        align-items: center;
+      }
+
+      .R1C1 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R1C1Title {
+        color: white;
+
+        align-items: center;
+        font-size: 45px;
+        margin-left: 70px;
+      }
+
+      .R1C1SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 45px;
+        margin-left: 150px;
+      }
+
+      .R1C2 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R1C2Title {
+        color: white;
+
+        align-items: center;
+        font-size: 35px;
+        margin-left: 10px;
+      }
+
+      .R1C2SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 45px;
+        margin-left: 150px;
+      }
     </style>
   </head>
 
@@ -173,20 +234,37 @@
 
     <div class="Hero Section">
       <img class="BannerImage" src="Images/Street Fighter 6 Banner.jpg" />
-      <p class="BannerTitle">
-        Street Fighter 6 Announced After Mysterious Countdown
-      </p>
 
-      <p class="SiteTitle">
-        <span><strong>Gameinformer - Feb 20, 2022</strong></span>
-      </p>
+      <div class="BannerText">
+        <p class="BannerTitle">
+          Street Fighter 6 Announced After Mysterious Countdown
+        </p>
+        <p class="SiteTitle">
+          <span><strong>Gameinformer - Feb 20, 2022</strong></span>
+        </p>
+      </div>
     </div>
-    <p class="NewsBanner">News</p>
 
+    <div class="NewsSection">
+      <p class="NewsBanner">News</p>
+    </div>
     <div class="NewsFeed">
-      <div class="NewRow1" src="Images/LiesofP.png">
-        <img class="R1C1Image" src="Images/LiesofP.png" />
-        <img class="R1C2Image" src="Images/xurdestiny2.png" />
+      <div class="NewsRow1">
+        <div class="R1C1">
+          <img class="R1C1Image" src="Images/LiesofP.png" />
+          <div class="R1C1Title">
+            Lies of P - 11 More Minutes of Gameplay | Gamescom 2022
+          </div>
+          <div class="R1C1SiteTitle">IGN - Aug 27, 2022</div>
+        </div>
+        <div class="R1C2">
+          <img class="R1C2Image" src="Images/xurdestiny2.png" />
+          <div class="R1C2Title">
+            Where is Xur Today? (August 26 - 30) Destiny 2 Xur Location And
+            Exotic Items Guide
+          </div>
+          <div class="R1C2SiteTitle">Gamespot - Aug 26, 2022</div>
+        </div>
       </div>
     </div>
   </body>
