@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="GamesStyle.css" />
     <title>GamerVerse</title>
     <style>
       ::-webkit-scrollbar {
@@ -32,16 +32,15 @@
       }
 
       body {
-        /* overflow-y: scroll;   */
         overflow: visible;
-        overflow-x: scroll;
-        height: 100vh;
+        overflow-x: hidden;
+        height: 100%;
         width: 100%;
-        background-image: linear-gradient(
+        background-image: repeating-linear-gradient(
           #270202 5%,
-          #270202 10%,
+          #270202 5%,
           #21456d,
-          #21456d,
+          #1c3a5c,
           #21456d,
           #21456d,
           #270202
@@ -69,6 +68,13 @@
       #personbtn {
         color: white;
         cursor: pointer;
+      }
+      .HeroSection a {
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-size: 42px;
+        text-decoration: none;
       }
 
       .BannerImage {
@@ -134,6 +140,173 @@
         font-size: 42px;
         text-decoration: none;
       }
+
+      .NewsFeed {
+        padding-top: 5px;
+        height: 100vh;
+      }
+
+      .NewsRow1 {
+        display: flex;
+        padding-top: 40px;
+        padding-left: 530px;
+        vertical-align: bottom;
+      }
+
+      .NewsRow1 img {
+        display: flex;
+        width: 900px;
+        height: 300px;
+        padding-right: 200px;
+        vertical-align: middle;
+        align-items: center;
+        cursor: pointer;
+      }
+      .NewsRow1 img:hover {
+        opacity: 0.6;
+      }
+
+      .R1C1 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R1C1Title {
+        color: white;
+        align-items: center;
+        font-size: 35px;
+        margin-left: 70px;
+        cursor: pointer;
+      }
+
+      .R1C1Title:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R1C1SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 40px;
+        margin-left: 150px;
+        cursor: pointer;
+      }
+      .R1C1SiteTitle:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R1C2 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R1C2Title {
+        color: white;
+        display: inline-block;
+        align-items: center;
+        font-size: 30px;
+        margin-left: 3px;
+        cursor: pointer;
+      }
+      .R1C2Title:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R1C2SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 45px;
+        margin-left: 140px;
+        cursor: pointer;
+      }
+      .R1C2SiteTitle:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .NewsRow2 {
+        display: flex;
+        padding-top: 40px;
+        padding-left: 530px;
+        vertical-align: bottom;
+      }
+
+      .NewsRow2 img {
+        display: flex;
+        width: 900px;
+        height: 300px;
+        padding-right: 200px;
+        vertical-align: middle;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .NewsRow2 img:hover {
+        opacity: 0.6;
+      }
+
+      .R2C1 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R2C1Title {
+        padding-top: 20px;
+        color: white;
+        align-items: center;
+        font-size: 40px;
+        margin-left: 4px;
+        cursor: pointer;
+      }
+      .R2C1Title:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R2C1SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 45px;
+        margin-left: 150px;
+        cursor: pointer;
+      }
+      .R2C1SiteTitle:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R2C2 {
+        width: 900px;
+        padding-right: 150px;
+      }
+
+      .R2C2Title {
+        padding-top: 20px;
+        color: white;
+        display: inline-block;
+        align-items: center;
+        font-size: 50px;
+        margin-left: 70px;
+        cursor: pointer;
+      }
+      .R2C2Title:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .R2C2SiteTitle {
+        color: white;
+        align-items: center;
+        font-size: 45px;
+        margin-left: 150px;
+        cursor: pointer;
+      }
+      .R2C2SiteTitle:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
     </style>
   </head>
 
@@ -142,13 +315,20 @@
       <div class="logo">
         <h4><a href="index.html">Gamerverse</a></h4>
       </div>
+
       <ul class="nav-links">
         <li>
           <a href="Games.html"
-            >Games<span class="material-symbols-outlined" id="gamesdropdown">
-              arrow_drop_down</span
+            >Games<span class="material-symbols-outlined" id="gamesdropdown"
+              >arrow_drop_down</span
             ></a
           >
+          <ul class="Gamedrop">
+            <li><a href="#">Most Popular</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Upcoming Games</a></li>
+            <li><a href="#">Platforms</a></li>
+          </ul>
         </li>
         <li><a href="#">News</a></li>
         <li><a href="#">Reviews</a></li>
@@ -160,6 +340,12 @@
               arrow_drop_down</span
             ></a
           >
+          <ul class="Moredrop">
+            <li><a href="#">Sites</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Sites Deals</a></li>
+            <li><a href="#">Platforms</a></li>
+          </ul>
         </li>
       </ul>
       <span class="material-symbols-outlined" id="searchbtn"> search </span>
@@ -171,23 +357,55 @@
       <span class="material-symbols-outlined" id="personbtn"> person </span>
     </nav>
 
-    <div class="Hero Section">
-      <img class="BannerImage" src="Images/Street Fighter 6 Banner.jpg" />
-
-      <p class="BannerTitle">
-        Street Fighter 6 Announced After Mysterious Countdown
-      </p>
-
-      <p class="SiteTitle">
-        <span><strong>Gameinformer - Feb 20, 2022</strong></span>
-      </p>
+    <div class="HeroSection">
+      <a href="SF6News.html"
+        ><img class="BannerImage" src="Images/Street Fighter 6 Banner.jpg" />
+        <div class="BannerText">
+          <p class="BannerTitle">
+            Street Fighter 6 Announced After Mysterious Countdown
+          </p>
+          <p class="SiteTitle">
+            <span><strong>Gameinformer - Feb 20, 2022</strong></span>
+          </p>
+        </div>
+      </a>
     </div>
-    <p class="NewsBanner">News</p>
 
+    <div class="NewsSection">
+      <p class="NewsBanner">Games</p>
+    </div>
     <div class="NewsFeed">
-      <div class="NewRow1" src="Images/LiesofP.png">
-        <img class="R1C1Image" src="Images/LiesofP.png" />
-        <img class="R1C2Image" src="Images/xurdestiny2.png" />
+      <div class="NewsRow1">
+        <div class="R1C1">
+          <img class="R1C1Image" src="Images/LiesofP.png" />
+          <div class="R1C1Title">
+            Lies of P - 11 More Minutes of Gameplay | Gamescom 2022
+          </div>
+          <div class="R1C1SiteTitle">IGN - Aug 27, 2022</div>
+        </div>
+        <div class="R1C2">
+          <img class="R1C2Image" src="Images/xurdestiny2.png" />
+          <div class="R1C2Title">
+            Where is Xur Today? (August 26 - 30) Destiny 2 Xur Location And
+            Exotic Items Guide
+          </div>
+          <div class="R1C2SiteTitle">Gamespot - Aug 26, 2022</div>
+        </div>
+      </div>
+      <div class="NewsRow2">
+        <div class="R2C1">
+          <img class="R2C1Image" src="Images/TheLstOfUs.png" />
+          <div class="R2C1Title">
+            The Last Of Us Part 1 Will Use Dualsense In a Completely New Way -
+            IGN Daily Fix
+          </div>
+          <div class="R2C1SiteTitle">IGN - Aug 26, 2022</div>
+        </div>
+        <div class="R2C2">
+          <img class="R2C2Image" src="Images/Portalcompanion.png" />
+          <div class="R2C2Title">Portal Companion Collection</div>
+          <div class="R2C2SiteTitle">Metacritic - Jun 28, 2022</div>
+        </div>
       </div>
     </div>
   </body>

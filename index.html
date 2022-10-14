@@ -82,30 +82,32 @@
         height: 500px;
         margin-left: 790px;
         cursor: pointer;
-        display: block;
+        display: inline-block;
       }
+
       .BannerImage:hover {
         opacity: 0.8;
       }
 
       .BannerTitle {
         color: white;
-        width: 300px;
+        width: 1300px;
         margin-left: 760px;
         font-size: 50px;
         cursor: pointer;
-        display: inline;
+        display: inline-block;
       }
 
       .BannerTitle:hover {
         text-decoration: underline;
         text-decoration-thickness: 2px;
       }
+
       .SiteTitle {
         color: white;
-        width: 300px;
+        width: 1100px;
         margin-left: 1050px;
-        margin-bottom: 120px;
+        margin-bottom: 60px;
         font-size: 54px;
         cursor: pointer;
         display: inline;
@@ -123,7 +125,7 @@
         border-color: #707070;
         border-style: solid;
         width: 2000px;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: 320px;
         font-size: 80px;
         cursor: pointer;
@@ -187,7 +189,7 @@
       .R1C1SiteTitle {
         color: white;
         align-items: center;
-        font-size: 45px;
+        font-size: 40px;
         margin-left: 150px;
         cursor: pointer;
       }
@@ -205,7 +207,7 @@
         color: white;
         display: inline-block;
         align-items: center;
-        font-size: 33px;
+        font-size: 30px;
         margin-left: 3px;
         cursor: pointer;
       }
@@ -242,6 +244,7 @@
         align-items: center;
         cursor: pointer;
       }
+
       .NewsRow2 img:hover {
         opacity: 0.6;
       }
@@ -314,13 +317,20 @@
       <div class="logo">
         <h4><a href="index.html">Gamerverse</a></h4>
       </div>
+
       <ul class="nav-links">
         <li>
           <a href="Games.html"
-            >Games<span class="material-symbols-outlined" id="gamesdropdown">
-              arrow_drop_down</span
+            >Games<span class="material-symbols-outlined" id="gamesdropdown"
+              >arrow_drop_down</span
             ></a
           >
+          <ul class="Gamedrop">
+            <li><a href="#">Most Popular</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Upcoming Games</a></li>
+            <li><a href="#">Platforms</a></li>
+          </ul>
         </li>
         <li><a href="#">News</a></li>
         <li><a href="#">Reviews</a></li>
@@ -332,10 +342,22 @@
               arrow_drop_down</span
             ></a
           >
+          <ul class="Moredrop">
+            <li><a href="#">Sites</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Sites Deals</a></li>
+            <li><a href="#">Platforms</a></li>
+          </ul>
         </li>
       </ul>
       <span class="material-symbols-outlined" id="searchbtn"> search </span>
       <div class="hamburger">
+        <!-- <ul>
+          <li><a href="#">Sites</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Sites Deals</a></li>
+          <li><a href="#">Platforms</a></li>
+        </ul> -->
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
