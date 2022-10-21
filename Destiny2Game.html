@@ -70,12 +70,76 @@
         cursor: pointer;
       }
 
-      .logo a {
+      .HeroSection a {
         color: white;
         text-transform: capitalize;
         letter-spacing: 1px;
         font-size: 42px;
         text-decoration: none;
+      }
+
+      .BannerImage {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+      }
+
+      .BannerImage:hover {
+        opacity: 0.8;
+      }
+
+      .GameImage {
+        width: 19%;
+        margin-top: 400px;
+        height: 550px;
+        margin-left: 90px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        bottom: 40px;
+      }
+
+      .genres {
+        margin-left: 700px;
+        margin-top: 20px;
+      }
+
+      .Platforms {
+        margin-left: 700px;
+        margin-top: 20px;
+      }
+
+      .BannerTitle {
+        color: white;
+        width: 1300px;
+        margin-left: 700px;
+        margin-top: 20px;
+        font-size: 30px;
+        /* cursor: pointer; */
+        display: inline-block;
+      }
+
+      .BannerTitle:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+
+      .SiteTitle {
+        color: white;
+        width: 1100px;
+        margin-left: 1050px;
+        margin-bottom: 60px;
+        font-size: 54px;
+        cursor: pointer;
+        display: inline;
+      }
+
+      .SiteTitle :hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
       }
 
       .NewsBanner {
@@ -88,11 +152,20 @@
         margin-top: 10px;
         margin-left: 320px;
         font-size: 80px;
-        padding-left: 820px;
+        cursor: pointer;
+        padding-left: 920px;
         padding-top: 10px;
         padding-bottom: 20px;
         display: block;
         border-radius: 10px;
+      }
+
+      .logo a {
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-size: 42px;
+        text-decoration: none;
       }
 
       .NewsFeed {
@@ -123,15 +196,14 @@
 
       .R1C1 {
         width: 900px;
-        padding-right: 150px;
+        margin-left: -100px;
       }
 
       .R1C1Title {
         color: white;
         align-items: center;
-        font-size: 45px;
-        margin-top: 10px;
-        margin-left: 260px;
+        font-size: 35px;
+        margin-left: 70px;
         cursor: pointer;
       }
 
@@ -154,16 +226,15 @@
 
       .R1C2 {
         width: 900px;
-        padding-right: 150px;
+        margin-left: 100px;
       }
 
       .R1C2Title {
         color: white;
         display: inline-block;
         align-items: center;
-        margin-top: 10px;
-        font-size: 45px;
-        margin-left: 280px;
+        font-size: 30px;
+        margin-left: 3px;
         cursor: pointer;
       }
       .R1C2Title:hover {
@@ -218,12 +289,13 @@
       }
 
       .R2C1Title {
+        padding-top: 20px;
         color: white;
         align-items: center;
-        font-size: 45px;
-        margin-top: 10px;
-        margin-left: 260px;
+        font-size: 35px;
+
         cursor: pointer;
+        text-decoration: none;
       }
 
       .R2C1Title:hover {
@@ -248,22 +320,15 @@
         width: 900px;
         padding-right: 150px;
         margin-left: 100px;
-        text-decoration: none;
-      }
-
-      .R2C2 a {
-        width: 900px;
-        padding-right: 150px;
-        margin-left: 100px;
-        text-decoration: none;
       }
 
       .R2C2Title {
+        padding-top: 20px;
         color: white;
+        display: inline-block;
         align-items: center;
-        font-size: 45px;
-        margin-top: 10px;
-        margin-left: 270px;
+        font-size: 50px;
+        margin-left: 70px;
         cursor: pointer;
       }
       .R2C2Title:hover {
@@ -338,47 +403,75 @@
       <span class="material-symbols-outlined" id="personbtn"> person </span>
     </nav>
 
-    <!-- <div class="HeroSection">
-      <a href="SF6News.html">
-        <img class="BannerImage" src="Images/Street Fighter 6 Banner.jpg" />
+    <div class="HeroSection">
+      <a href="#">
+        <img class="BannerImage" src="Images/Destraveler.png" />
+        <img class="GameImage" src="Images/Destiny2_Hero_Art.png" />
         <div class="BannerText">
+          <p class="genres">
+            <span><strong>Genres :</strong></span> Adventure, Role-playing
+            (RPG), Shooter
+          </p>
+
+          <p class="Platforms">
+            <span><strong>Platforms :</strong></span> Xbox One, PlayStation 4,
+            PlayStation 5, PC (Microsoft Windows), Xbox Series X|S, Google
+            Stadia
+          </p>
+
           <p class="BannerTitle">
-            Street Fighter 6 Announced After Mysterious Countdown
+            Dive into the world of Destiny 2 to explore the mysteries of the
+            solar system and experience responsive first-person shooter combat.
+            Unlock powerful elemental abilities and collect unique gear to
+            customize your Guardian's look and playstyle. Enjoy Destiny 2’s
+            cinematic story, challenging co-op missions, and a variety of PvP
+            modes alone or with friends. Download for free today and write your
+            legend in the stars.
           </p>
-          <p class="SiteTitle">
+
+          <!-- <p class="SiteTitle">
             <span><strong>Gameinformer - Feb 20, 2022</strong></span>
-          </p>
+          </p> -->
         </div>
       </a>
-    </div> -->
+    </div>
 
     <div class="NewsSection">
-      <p class="NewsBanner">Most Popular</p>
+      <p class="NewsBanner">Videos</p>
     </div>
     <div class="NewsFeed">
       <div class="NewsRow1">
         <div class="R1C1">
-          <img class="R1C1Image" src="Images/Elden Ring.png" />
-          <div class="R1C1Title">Elden Ring</div>
+          <iframe
+            width="860"
+            height="515"
+            src="https://www.youtube.com/embed/lfoeZLp5A7k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="R1C2">
-          <img class="R1C2Image" src="Images/fortnitedragonballz.png" />
-          <div class="R1C2Title">Fortnite</div>
+          <iframe
+            width="860"
+            height="515"
+            src="https://www.youtube.com/embed/PYM7KDrx_Ho"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
 
       <div class="NewsRow2">
         <div class="R2C1">
           <a href="#">
-            <img class="R2C1Image" src="Images/valorant.png" />
-            <p class="R2C1Title">Valorant</p>
-          </a>
+            
         </div>
         <div class="R2C2">
-          <a href="Destiny2Game.html">
-            <img class="R2C2Image" src="Images/Destiny2_Hero_Art.png" />
-            <div class="R2C2Title">Destiny 2</div>
-          </a>
+          
         </div>
       </div>
     </div>
